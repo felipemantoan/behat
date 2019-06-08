@@ -1,6 +1,13 @@
 {
+    "autoload": {
+        "psr-4": {
+            "Aula\\" : "features/bootstrap/"
+        }
+    },
     "require": {
         "behat/mink": "^1.7",
-        "behat/mink-extension": "^2.3"
+        "behat/mink-extension": "^2.3",
+        "behat/behat": "^3.5",
+        "behat/mink-selenium2-driver": "^1.3"
     }
 }

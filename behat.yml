@@ -1,0 +1,16 @@
+default:
+  suites:
+    default:
+      paths:
+        - '%paths.base%/features/tests'
+      contexts: 
+        - Aula\FeatureContext
+        - Behat\MinkExtension\Context\MinkContext
+  extensions:
+    Behat\MinkExtension:
+      base_url: 'https://siga.cps.sp.gov.br/'
+      default_session: selenium2
+      javascript_session: selenium2
+      browser_name: 'chrome'
+      selenium2:
+        wd_host: http://localhost:4444/wd/hub
