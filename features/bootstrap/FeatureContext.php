@@ -12,13 +12,12 @@ use Behat\Gherkin\Node\TableNode;
 class FeatureContext implements Context
 {
     /**
-     * Initializes context.
-     *
-     * Every scenario gets its own context instance.
-     * You can also pass arbitrary arguments to the
-     * context constructor through behat.yml.
+     * @Given I wait a second
+     * 
+     * @Given I wait :seconds seconds
      */
-    public function __construct()
+    public function iWaitSeconds(int $seconds = 1)
     {
+        sleep($seconds);
     }
 }
